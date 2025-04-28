@@ -1,11 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello world!!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forniture</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- come to top -->
+    <div id="Head"></div>
+
+    <header>
+      <div class="imgage">
+        <img src="./pictures/logo.png" alt="" width="80px" />
+      </div>
+
+      <div class="inpute-account">
+        <div class="input-field">
+          <input type="text" placeholder="Search Products" />
+          <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="account">
+          <a href="#">My Account</a>
+        </div>
+        <div class="shop-icon">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+      </div>
+      <!-- Burger Icon -->
+      <div class="burger" onclick="toggleMenu()">
+        <i id="menu-icon" class="fa-solid fa-bars"></i>
+        <!-- Notice: id="menu-icon" -->
+      </div>
+
+      <div class="links" id="navLinks">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- home section -->
+    <div class="home-section">
+      <div class="sale-off">
+        <h2>70% SALE OFF</h2>
+        <h1 class="title">FURNITURE AT COST</h1>
+        <p class="description">
+          Various changes are suspended in a flow of elements in the flesh. The
+          course, sought by me for living decoration, has no painful
+          interruption.
+        </p>
+        <div class="discover-btn">
+          <button class="btn">DISCOVER MORE</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOP ARROW -->
+    <div class="go-top">
+      <a href="#Head" style="color: white"
+        ><i class="fa-solid fa-arrow-turn-up"></i
+      ></a>
+    </div>
+
+    <!-- like products -->
+    <div class="like-product">
+      <div class="about-product">
+        <h1 class="product-title">PRODUCTS YOU MAY LIKE</h1>
+        <p>
+          Various changes are suspended in a flow of elements in the flesh. The
+          course, sought by me for living decoration, has no painful
+          interruption.
+        </p>
+      </div>
+      <div class="products-card">
+        <div class="card">
+          <img src="./pictures/popular4.png.webp" alt="" />
+          <div class="discription">
+            <a href="#">Sleek modern chair, perfect for home or office.</a>
+          </div>
+          <h3>$367</h3>
+        </div>
+        <div class="card">
+          <img src="./pictures/popular5.png.webp" alt="" />
+          <div class="discription">
+            <a href="#">Sleek modern chair, perfect for home or office.</a>
+          </div>
+          <h3>$367</h3>
+        </div>
+        <div class="card">
+          <img src="./pictures/popular6.png.webp" alt="" />
+          <div class="discription">
+            <a href="#">Sleek modern chair, perfect for home or office.</a>
+          </div>
+          <h3>$367</h3>
+        </div>
+      </div>
+      <div class="discover-btn">
+        <button class="btn">DISCOVER MORE</button>
+      </div>
+    </div>
+
+    <!-- manufacture section -->
+    <div class="manufacture">
+      <div class="image-detail"></div>
+      <div class="manufacture-text">
+        <h1>BEST FURNITURE MANUFACTURER</h1>
+        <p>
+          Various changes are suspended in a flow of elements in the flesh. The
+          course, sought by me for living decoration, has no painful
+          interruption.
+        </p>
+        <p>
+          Various changes are suspended in a flow of elements in the flesh. The
+          course, sought by me for living decoration, has no painful
+          interruption.
+        </p>
+        <div class="discover-btn">
+          <button class="btn">DISCOVER MORE</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOP PICK section -->
+    <div class="like-product">
+      <div class="about-product">
+        <h1 class="product-title">TOP PICK</h1>
+        <p>
+          Various changes are suspended in a flow of elements in the flesh. The
+          course, sought by me for living decoration, has no painful
+          interruption.
+        </p>
+      </div>
+      <div class="products-card">
+        <div class="card">
+          <img src="./pictures/popular7.png.webp" alt="" />
+          <div class="discription">
+            <a href="#">Sleek modern chair, perfect for home or office.</a>
+          </div>
+          <h3>$367</h3>
+        </div>
+        <div class="card">
+          <img src="./pictures/popular8.png.webp" alt="" />
+          <div class="discription">
+            <a href="#">Sleek modern chair, perfect for home or office.</a>
+          </div>
+          <h3>$367</h3>
+        </div>
+        <div class="card">
+          <img src="./pictures/popular9.png.webp" alt="" />
+          <div class="discription">
+            <a href="#">Sleek modern chair, perfect for home or office.</a>
+          </div>
+          <h3>$367</h3>
+        </div>
+      </div>
+      <div class="discover-btn">
+        <button class="btn">DISCOVER MORE</button>
+      </div>
+    </div>
+
+    <!-- categories section -->
+    <div class="categories">
+      <div class="category">
+        <div class="image">
+          <img src="./services/services1.svg" alt="">
+        </div>
+        <h3>Fast & Free Delivery</h3>
+        <p>Free delivery on all orders</p>
+      </div>
+      <div class="category">
+        <div class="image">
+          <img src="./services/services2.svg" alt="">
+        </div>
+        <h3>Secure Payment</h3>
+        <p>Free delivery on all orders</p>
+      </div>
+      <div class="category">
+        <div class="image">
+          <img src="./services/services3.svg" alt="">
+        </div>
+        <h3>Money Back Guarantee</h3>
+        <p>Free delivery on all orders</p>
+      </div>
+      <div class="category">
+        <div class="image">
+          <img src="./services/services4.svg" alt="">
+        </div>
+        <h3>Online Support</h3>
+        <p>Free delivery on all orders</p>
+      </div>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        var links = document.getElementById("navLinks");
+        var icon = document.getElementById("menu-icon");
+
+        links.classList.toggle("show");
+
+        if (links.classList.contains("show")) {
+          icon.classList.remove("fa-bars");
+          icon.classList.add("fa-xmark");
+        } else {
+          icon.classList.remove("fa-xmark");
+          icon.classList.add("fa-bars");
+        }
+      }
+    </script>
+  </body>
 </html>

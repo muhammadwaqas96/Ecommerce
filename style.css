@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  height: 100px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3b141c;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+}
+
+.imgage img {
+  width: 80px;
+}
+
+/* Burger Icon */
+.burger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.links {
+  width: 40%;
+}
+
+.links ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.links ul a {
+  text-decoration: none;
+  color: white;
+  border-radius: 25px;
+  padding: 8px 15px;
+  transition: 0.3s ease;
+}
+
+.links ul a:hover {
+  color: #3b141c;
+  background-color: #f3961c;
+}
+
+.inpute-account {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inpute-account input {
+  width: 80%;
+  padding: 10px 17px 10px 0;
+  font-size: 16px;
+  color: white;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  outline: none;
+}
+
+input::placeholder {
+  color: white;
+  font-size: 16px;
+}
+
+.inpute-account button {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 10px 10px 10.2px 10px;
+}
+
+.inpute-account .input-field i {
+  font-size: 20px;
+  padding-bottom: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+.inpute-account .account a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.5s ease;
+}
+
+.inpute-account .account a:hover {
+  color: #f3961c;
+}
+
+.shop-icon i {
+  font-size: xx-large;
+  cursor: pointer;
+  color: white;
+}
+
+/* go top */
+.go-top {
+  height: 50px;
+  width: 50px;
+  position: sticky;
+  top: 500px;
+  left: 1180px;
+  background-color: #f3961c;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: x-large;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* home section */
+.home-section {
+  background-image: url('./pictures/main_furniture_2.webp');
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.sale-off {
+  width: 570px;
+  height: 80%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 50px 70px;
+}
+
+.sale-off h2 {
+  color: rgb(117, 117, 117);
+}
+
+.sale-off .title {
+  font-size: 50px;
+  color: #f3961c;
+  line-height: 1.2;
+  font-size: 70px;
+}
+
+.sale-off .description {
+  color: rgb(83, 83, 83);
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.sale-off .discover-btn,
+.discover-btn .btn {
+  background-color: #f3961c;
+  color: white;
+  font-size: 15px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  transition: 0.5s ease;
+}
+
+.sale-off .discover-btn,
+.discover-btn .btn:hover {
+  background-color: #bd6c01;
+  cursor: pointer;
+}
+
+/* like products section */
+.like-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.like-product .about-product {
+  width: 50%;
+  height: auto;
+  text-align: center;
+}
+
+.about-product p {
+  margin: 10px 0 60px 0;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.products-card {
+  display: flex;
+}
+
+.like-product .card {
+  height: 350px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.like-product .card a {
+  text-decoration: none;
+  padding: 0 30px;
+}
+
+.like-product .card a:hover {
+  text-decoration: underline;
+}
+
+.like-product .card h3 {
+  color: #f3961c;
+}
+
+
+/* manufacture section */
+.manufacture {
+  margin: 30px 0;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+}
+
+.manufacture .image-detail {
+  background-image: url('./pictures/visit_bg.png.webp');
+  height: 100vh;
+}
+
+.manufacture .manufacture-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 100px 50px;
+  background-color: #f3961c93;
+  color: black;
+  font-size: 15px;
+}
+
+.manufacture .manufacture-text h1 {
+  color: black;
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.manufacture .manufacture-text .discover-btn .btn {
+  background-color: white;
+  color: #f3961c;
+}
+
+.manufacture .manufacture-text .discover-btn .btn:hover {
+  background-color: rgba(255, 255, 255, 0.895);
+}
+
+/* categories section */
+.categories {
+  height: 300px;
+  background-color: #f3961c93;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+.category h3{
+  margin: 20px 0 7px 0;
+}
+
+@media (max-width: 768px) {
+  header {
+    position: relative;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .links {
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .links ul {
+    flex-direction: column;
+  }
+
+  .links ul li {
+    margin: 10px 0;
+  }
+
+  .inpute-account {
+    width: 50%;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .account,
+  .shop-icon {
+    display: none;
+  }
+
+  .inpute-account input {
+    width: 70%;
+    text-align: center;
+  }
+
+  .like-product .about-product {
+    width: 90%;
+    height: auto;
+    text-align: center;
+  }
+
+  .products-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* go to top */
+  .go-top{
+    top: 500px;
+    left: 420px;
+  }
+}
+
+.show {
+  max-height: 500px;
+  transition: max-height 0.4s ease-in;
+}
