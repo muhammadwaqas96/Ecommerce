@@ -248,7 +248,7 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 100px 50px;
+  padding: 70px 50px;
   background-color: #f3961c93;
   color: black;
   font-size: 15px;
@@ -347,6 +347,7 @@ footer .footer-icons{
 .footer-icons a:hover{
   background-color: #f3961c;
   color: white;
+  border: none;
   transition: all 0.3s ease-in-out;
 }
 .footer-text{
@@ -401,6 +402,20 @@ footer .footer-icons{
     width: 70%;
     text-align: center;
   }
+  
+  .home-section{
+    height: 80vh;
+  }
+  .sale-off{
+    width: 100%;
+    height: 80%;
+    padding: 20px 30px;
+  }
+.sale-off .title {
+  color: #f3961c;
+  line-height: 1.2;
+  font-size: 40px;
+}
 
   .like-product .about-product {
     width: 90%;
@@ -414,8 +429,25 @@ footer .footer-icons{
 
   /* go to top */
   .go-top{
-    top: 500px;
-    left: 420px;
+    top: 630px;
+    left: 300px;
+  }
+  /* <!-- manufacture section --> */
+  .manufacture, .manufacture-text{
+    width: 360px;
+    height: 60vh;
+  }
+ .manufacture-text{
+    padding: 10px 20px !important;
+  }
+  .manufacture-text h1{
+    text-align: center;
+  }
+  .image-detail{
+    display: none;
+  }
+  .manufacture .manufacture-text h1{
+    font-size: xx-large;
   }
 
   /* category section */
@@ -427,7 +459,7 @@ footer .footer-icons{
 
   /* footer */
   footer{
-    height: 170vh;
+    height: 140vh;
     padding: 10px 20px ;
   }
   .footer-links{
@@ -437,11 +469,11 @@ footer .footer-icons{
     width: 100%;
   }
   .footer-links{
-    height: 130vh;
+    height: 100vh;
   }
 
   footer .footer-icons{
-    width: 40%;
+    width: 55%;
     justify-content: space-around;
   }
 }
