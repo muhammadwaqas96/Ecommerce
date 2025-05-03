@@ -5,8 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"
+    />
   </head>
   <body>
+    <!-- come to top -->
+    <div id="Head"></div>
+
+    <header>
+      <div class="imgage">
+        <img src="../pictures/logo.png" alt="" width="80px" />
+      </div>
+
+      <div class="inpute-account">
+        <div class="input-field">
+          <input type="text" placeholder="Search Products" />
+          <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="account">
+          <a href="#">My Account</a>
+        </div>
+        <div class="shop-icon">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+      </div>
+      <!-- Burger Icon -->
+      <div class="burger" onclick="toggleMenu()">
+        <i id="menu-icon" class="fa-solid fa-bars"></i>
+        <!-- Notice: id="menu-icon" -->
+      </div>
+
+      <div class="links" id="navLinks">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Page</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
     <!-- ---------------------------------seciont-1 starts------------------------ -->
     <div class="section-1">
       <h2>PRODUCTS</h2>
@@ -116,5 +160,22 @@
       </div>
 
      <!-- -------------------------last section coding ends--------------------------------------- -->
+
+     <script>
+      function toggleMenu() {
+        var links = document.getElementById("navLinks");
+        var icon = document.getElementById("menu-icon");
+
+        links.classList.toggle("show");
+
+        if (links.classList.contains("show")) {
+          icon.classList.remove("fa-bars");
+          icon.classList.add("fa-xmark");
+        } else {
+          icon.classList.remove("fa-xmark");
+          icon.classList.add("fa-bars");
+        }
+      }
+    </script>
   </body>
 </html>
