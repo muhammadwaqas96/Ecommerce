@@ -20,6 +20,7 @@ html {
     flex-wrap: wrap;
     position: sticky;
     top: 0;
+    z-index: 1000;
   }
   
   .imgage img {
@@ -458,6 +459,96 @@ html {
     box-shadow: -1px 1px 15px 2px white;
 }
 /* -------------------------------------last-section coding ends------------------------------------------------ */
+
+.categories {
+  height: auto;
+  padding: 80px 20px;
+  background-color: #f3961c93;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+.category h3{
+  margin: 20px 0 7px 0;
+}
+
+/* footer */
+footer{
+  height: 600px;
+  background-color: #1d2547;
+  padding: 0 90px 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+footer .footer-links{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links .logo-with-text{
+  width: 35%;
+  height: auto;
+}
+.logo-with-text p{
+  font-size: 14px;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.635);
+}
+footer .heading{
+  margin-bottom: 20px;
+}
+footer ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer ul li a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.619);
+  font-size: 15px;
+}
+footer ul li a:hover{
+  color: #f3961c;
+  text-decoration: underline;
+}
+footer .footer-icons{
+  width: 15%;
+  align-self: self-start;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-icons a{
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+}
+.footer-icons a:hover{
+  background-color: #f3961c;
+  color: white;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.footer-text{
+  text-align: center;
+  color: rgba(255, 255, 255, 0.836);
+  font-size: 14px;
+}
+.footer-text a{
+  color: #f3961c;
+}
+
 @media (max-width: 768px){
     
 header {
@@ -502,6 +593,39 @@ header {
   .inpute-account input {
     width: 70%;
     text-align: center;
+  }
+
+  /* go to top */
+  .go-top{
+    top: 1000px;
+    left: 300px;
+    z-index: 1000;
+  }
+
+  .categories{
+    height: 900px;
+    flex-direction: column;
+    align-items:baseline;
+  }
+
+  /* footer */
+  footer{
+    height: 140vh;
+    padding: 10px 20px ;
+  }
+  .footer-links{
+    flex-direction: column;
+  }
+  .footer-links .logo-with-text{
+    width: 100%;
+  }
+  .footer-links{
+    height: 100vh;
+  }
+
+  footer .footer-icons{
+    width: 55%;
+    justify-content: space-around;
   }
 }
 
